@@ -28,6 +28,11 @@ exports.commands = {
 		if (!this.hasRank(by, '+%@#~')) text += ('/w ' + toId(by) + ', ');
 		this.say(con, room, text + '__MashiBot__ source code: ' + config.fork);
 	},
+	sayola: function(arg, by, room, con) {
+		var text = '';
+		if (!this.hasRank(by, '+%@#~')) text += ('/w ' + toId(by) + ', ');
+		this.say('OLÁ!!! Eu sou o AndyBot! O bot criado pelo fantastico utilizador AndrewGoncel. O meu objetivo é entreter-vos na sala JogosPT fazendo várias coisas divertidas. Espero que gostem de mim ^~^');
+	},
 	shell: 'botshell',
 	botshell: function(arg, by, room, con) {
 		var text = '';
